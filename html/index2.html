@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>owojtal's Personal Website</title>
+  <title>Owojtal's Personal Website</title>
   <style>
     /* Add styles here */
     body {
@@ -25,6 +25,29 @@
       background-color: #DDD8BD;
       padding: 50px;
       border-radius: 25px;
+      float: left;
+      width: 70%;
+    }
+    .navbar {
+      float: right;
+      width: 30%;
+      background-color: #DDD8BD;
+      height: 100%;
+      padding: 50px;
+      border-radius: 25px;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #003399;
     }
     .profile-img {
       width: 200px;
@@ -54,22 +77,17 @@
       color: #ffffff;
       cursor: pointer;
     }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #ffcc00;
-      color: #fff;
-    }
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 20px;
-    }
+    
   </style>
+
 </head>
 <body>
+  <h1>O. Wojtal</h1>
+  <div class="container">
+    <img src="profile.jpeg" alt="Profile Picture" class="profile-img">
+    <p class="intro">Hi, I'm a software engineer with a passion for creating innovative and efficient solutions. I can pick up new technologies and programming languages with ease, and am always willing to go the extra mile to deliver high-quality results.  I'm confident in my ability to tackle any project that comes my way.</p>
+    <a href="#" class="cta" >Learn More</a>
+  </div>
   <div class="navbar">
     <ul>
       <li><a href="index.html">About</a></li>
