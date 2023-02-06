@@ -11,6 +11,8 @@
       background-image: url("blue_background.jpg");
       background-size: cover;
       /*background-color: #003399;*/
+  
+      justify-content: center;
     }
     h1 {
       font-size: 45px;
@@ -25,6 +27,33 @@
       background-color: #DDD8BD;
       padding: 50px;
       border-radius: 25px;
+      float: center;
+      width: 70%;
+      justify-content: center;
+    }
+    .navbar {
+      justify-content: center;
+      text-align: center;
+      float: center;
+      display: block;
+      width: 30%;
+      background-color: #DDD8BD;
+      height: 100%;
+      padding: 50px;
+      border-radius: 25px;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0 auto;
+    }
+    .navbar li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #003399;
     }
     .profile-img {
       width: 200px;
@@ -61,10 +90,13 @@
 <body>
   <h1>O. Wojtal</h1>
   <div class="container">
-    <img src="profile.jpeg" alt="Profile Picture" class="profile-img">
-    <p class="intro">Hi, I'm a software engineer with a passion for creating innovative and efficient solutions. I can pick up new technologies and programming languages with ease, and am always willing to go the extra mile to deliver high-quality results.  I'm confident in my ability to tackle any project that comes my way.</p>
-    <a href="about.html" class="cta" >Learn More</a>
+    <div class="navbar">
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="reading_list.html">Reading-List</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </div>
 </body>
 </html>
-
