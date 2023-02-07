@@ -2,74 +2,82 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Software Engineer's Portfolio</title>
+    <title>Software Engineer | Projects</title>
     <style>
-      /* Add some styles to make the page visually appealing */
-      * {
-        box-sizing: border-box;
-      }
+      /* Add some styling to make the page look nice */
       body {
         font-family: Arial, sans-serif;
         padding: 20px;
-      }
-      .projects {
-        display: flex;
-        flex-wrap: wrap;
+        background-image: url("blue_background.jpg");
+        background-size: cover;
       }
       .project {
-        width: calc(20% - 40px);
-        background-color: #f2f2f2;
+        border: 1px solid #ddd;
         padding: 20px;
-        margin: 20px;
-        text-align: center;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 10px #ddd;
+        background-color: #DDD8BD;
       }
       .project h3 {
         margin-top: 0;
       }
+      .project p {
+        margin-bottom: 0;
+      }
       .project img {
+        width: 200px;
+        height: 200px;
         max-width: 100%;
         height: auto;
       }
     </style>
   </head>
   <body>
-    <h1>Some of the Work I have done</h1>
-    <div class="projects">
-      <!-- Project 1 -->
-      <div class="project">
-        <img src="osm.png" alt="Open Street Maps data">
-        <h3>Reinforcment Learning Project</h3>
-        <p>We implemented a Q-Learning algorithm to find the shortest points 
-          between two locations on campus. Q-Learning is a Model-free RL algorithm, meaning it does not need a representation of the enviroment to find the optimal policy.
-        We interacted with the Open Street Maps api through the overpassQuery language to extract transitions and distances.
-        <br> Skills Applied: Python -  </p>
-      </div>
-      <!-- Project 2 -->
-      <div class="project">
-        <img src="project2.png" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>A brief description of project 2 goes here</p>
-      </div>
-      <!-- Project 3 -->
-      <div class="project">
-        <img src="project3.png" alt="Project 3">
-        <h3>Project 3</h3>
-        <p>A brief description of project 3 goes here</p>
-      </div>
-      <!-- Project 4 -->
-      <div class="project">
-        <img src="project4.png" alt="Project 4">
-        <h3>Project 4</h3>
-        <p>A brief description of project 4 goes here</p>
-      </div>
-      <!-- Project 5 -->
-      <div class="project">
-        <img src="project5.png" alt="Project 5">
-        <h3>Project 5</h3>
-        <p>A brief description of project 5 goes here</p>
-      </div>
+    <h1>My Software Engineering Projects</h1>
+    <div class="project">
+      <img src="osm.png" alt="Open Street Maps data">
+      <a href="https://github.com/oscarWoj/Queens-Campus-RL-Pathfinding">
+        <h3>Reinforcement Learning Project</h3>
+      </a>
+      <div>
+      <p>Implemented a Reinforcement Learning algorithm called Q-Learning to optimize pathfinding on a virtual map of Queen's university campus using Python.
+      We interacted with the Open Street Maps api through the overpassQuery language to extract transitions and distances.
+      The project demonstrated an ability to apply Reinforcement Learning techniques to real-world problems and achieved improved pathfinding results compared to traditional search algorithms.
+    </p>
+     </div>
     </div>
+    <div class="project">
+      <a href="https://github.com/oscarWoj/CISC499">
+        <h3>University Capstone Project</h3>
+      </a>
+      <p>Independent research project on the content of a dark web cyber blackhat forum. 
+        Utilized BERTopic neural network to parse and analyze conversations, 
+        resulting in a deeper understanding of the topics discussed by participants. 
+        Attempted to isolate specific conversations for further analysis to aid in protecting against cyber attacks.</p>
+    </div>
+    <div class="project">
+        <h3>Database Managment Systems Resteraunt Course Project</h3>
+      <p>
+        Curently completing a Database Management Systems course where I develop a full-fledged restaurant web application from scratch. 
+        I began with creating an entity-relationship diagram, followed by building the eqivalent database using mySQL, 
+        and finally implemented the frontend using PHP.
+      </p>
+    </div>
+    <div class="project">
+      <a href="https://wojtaldevelopment.com/projects.html">
+        <h3>Personal Website</h3>
+      </a>
+      <p>Developed and maintained a personal portfolio website that showcases technical skills and knowledge acquired in infrastructure, 
+        highlighting work experiences, personal projects and a curated reading list. 
+        The website is hosted on AWS, powered by NGINX on a Linux operating system and implemented with HTML and CSS. Implemented industry standard features including HTTP/2 support, 
+        secure SSL certificates, and forced HTTPS redirection to enhance user experience and security.</p>
+    </div> 
+    <div class="project">
+      <a href="https://podhale.ca/">
+        <h3>Boy Scouts Website</h3>
+      </a>
+      <p>Formatting, upkeep, and translation of a WordPress site hosted by a sponsor.</p>
+    </div>
+
   </body>
 </html>
-
