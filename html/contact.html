@@ -33,6 +33,17 @@
     </style>
   </head>
   <body>
+    <script>
+      function showMore() {
+         var text = document.getElementById("text");
+         if (text.style.display === "none") {
+            text.style.display = "block";
+         } else {
+            text.style.display = "none";
+         }
+      }
+      </script>
+
     <div class="container">
       <h1>Contact Me</h1>
       <br>
@@ -43,7 +54,7 @@
      
       <p>PGP Key:<br>
         -----BEGIN PGP PUBLIC KEY BLOCK-----
-
+        <div id="text">
         mDMEY+HWnhYJKwYBBAHaRw8BAQdAea7+qkCmixv6WOoJKwweamkeFbyMUoaHZ7Ng
         s5A1LDW0IG9zY2FyIHcgPG9zY2FyLndvanRhbEBnbWFpbC5jb20+iJMEExYKADsW
         IQSbqCUfySftzs9zPFvvJ4dRF1JOfAUCY+HWngIbAwULCQgHAgIiAgYVCgkICwIE
@@ -54,12 +65,16 @@
         CRDvJ4dRF1JOfJKPAQCVcG6tcbhbT1MatP5cXy4xS9B/sR61OuUkZypRwhkP+QD8
         CF6r3tTmqh1HfDgdYHNqqoureVmQ1Q1WnQYi/StnLAA=
         <br>=4q2Q
+        </div>
+        <button onclick="showMore()">Show More</button>
         <br>
         -----END PGP PUBLIC KEY BLOCK-----</p>
       <br>
       <p>Feel free to reach out if you have any questions or just want to connect! I'd love to hear from you.</p>
     </div>
   </body>
+ 
+ 
   <footer>
     <footer>
       <p><a href="index.html">Back to Home Page</a></p>
